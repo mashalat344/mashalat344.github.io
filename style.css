@@ -10,3 +10,8 @@ body {
     background-color: #333333; /* A dark gray for the background */
     color: #ffffff; /* White color for the text */
 }
+
+.inline-image {
+    vertical-align: middle;
+}
+ 
