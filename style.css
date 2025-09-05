@@ -1,3 +1,12 @@
 .center-text {
     text-align: center;
 }
+
+.center-image {
+    text-align: center;
+}
+
+body {
+    background-color: #333333; /* A dark gray for the background */
+    color: #ffffff; /* White color for the text */
+}
