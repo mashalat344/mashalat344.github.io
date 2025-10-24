@@ -1,40 +1,70 @@
+/* --- 1. Global Page Styles (The <body> tag) --- */
+body {
+    /* Merged all 'body' styles into one block */
+    background-color: #333333; /* A dark gray for the background */
+    color: #ffffff;      /* White color for the text */
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+/* --- 2. Utility/Centering Styles --- */
 .center-text {
     text-align: center;
 }
 
 .center-image {
+    /* Use this class on a container (like a <div>) to center inline elements like images */
     text-align: center;
 }
 
-body {
-    background-color: #333333; /* A dark gray for the background */
-    color: #ffffff; /* White color for the text */
-}
-
 .inline-image {
+    /* Ensures images placed in a line of text are vertically aligned */
     vertical-align: middle;
 }
 
- 
-body {
-    font-family: 'Vazirmatn', sans-serif;
+/* --- 3. Collapsible/Accordion Styles (Button Styling) --- */
+.toggle-button {
+    /* Apply Vazirmatn font to the button itself */
+    font-family: 'Vazirmatn', sans-serif; 
+    
+    /* Increase size and padding for a bigger, more clickable button */
+    font-size: 18px; 
+    padding: 12px 18px; 
+    
+    /* Required base styles */
+    background-color: #555; 
+    color: #ffffff;      
+    cursor: pointer;
+    width: 100%;
+    text-align: center;  
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 5px; 
+    display: block;
 }
 
+.toggle-button:hover {
+    background-color: #666;
+}
+
+/* --- 4. Collapsible/Accordion Styles (Content Hiding/Showing) --- */
 .collapsible-content {
-    /* Set a consistent line height for all content */
+    /* Set a consistent line height for content */
     line-height: 1.5em; 
     
     /* Initially hidden state */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out; 
+    /* Initial padding */
+    padding: 0 18px; 
 }
 
 .collapsible-content.active {
-    /* Max-height approximation for 30 lines (30 * 1.5 = 45) */
-    max-height: 45em; /* <--- This is the value for 30 lines */
+    /* Max-height approximation for 30 lines (30 * 1.5 = 45em) */
+    /* Set this value large enough to ensure ALL content shows */
+    max-height: 45em; 
     
-    /* Restore padding when active */
+    /* Restore vertical padding when active */
     padding: 10px 18px; 
 }
- 
